@@ -1,0 +1,158 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: monospace;
+  background-image: linear-gradient(to right, #1d71fd, #fcb345);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 610px;
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0);
+}
+.result {
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+
+.weather__form {
+  margin-top: 40px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.weather__form input {
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 1.3em;
+}
+.weather__form select {
+  font-family: monospace;
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  margin: 10px auto;
+  font-size: 1.3em;
+}
+.btn__submit {
+  width: 100%;
+  padding: 7px;
+  margin-top: 15px;
+  border-radius: 3px;
+  background-color: rgb(207, 209, 102);
+  font-family: monospace;
+  font-size: 1.3em;
+}
+
+.alert-form {
+  background-color: rgb(190, 161, 161);
+  font: bold;
+  font-size: 1.3em;
+  padding: 10px;
+  border: rgb(179, 36, 36) solid 2px;
+  margin: 10px auto;
+  border-radius: 7px;
+}
+
+.div-weather {
+  margin-top: 2rem;
+  text-align: center;
+  background-color: rgba(70, 70, 70, 0.281);
+  border-radius: 7px;
+}
+
+.city-name {
+  font-size: 2em;
+  padding: 10px;
+  font-family: monospace;
+  margin: 0 auto;
+}
+
+.actual-weather {
+  font-size: 3.5em;
+  padding: 10px;
+  font-family: monospace;
+  margin: 0 auto;
+}
+
+.max-temp {
+  font-size: 1.5em;
+  padding: 10px;
+  font-family: monospace;
+  margin: 0 auto;
+}
+.min-temp {
+  font-size: 1.5em;
+  padding: 10px;
+  font-family: monospace;
+  margin: 0 auto;
+}
+
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
